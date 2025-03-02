@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 225 15% 5%;
+    --foreground: 224 40% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 225 15% 12%;
+    --card-foreground: 224 40% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 225 15% 12%;
+    --popover-foreground: 224 40% 90%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 224 40% 98%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 225 15% 20%;
+    --secondary-foreground: 224 40% 90%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 225 15% 20%;
+    --muted-foreground: 220 20% 70%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 225 20% 25%;
+    --accent-foreground: 224 40% 90%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 224 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 5%;
+    --border: 225 20% 25%;
+    --input: 225 20% 25%;
+    --ring: 220 100% 60%;
 
     --radius: 0.6rem;
   }
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans overscroll-none;
+    @apply bg-finance-eclipse-bg text-finance-eclipse-text font-sans overscroll-none;
     font-family: 'Inter', sans-serif;
   }
 
@@ -54,21 +54,21 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
   }
 
   /* Glass effect */
   .glass {
-    @apply bg-white bg-opacity-80 backdrop-blur-lg border border-white border-opacity-20 shadow-soft;
+    @apply bg-finance-eclipse-card bg-opacity-70 backdrop-blur-lg border border-white border-opacity-5 shadow-soft;
   }
   
   .glass-card {
-    @apply rounded-xl backdrop-blur-md bg-white bg-opacity-80 shadow-card border border-white border-opacity-30;
+    @apply rounded-xl backdrop-blur-md bg-finance-eclipse-card bg-opacity-80 shadow-card border border-white border-opacity-5;
   }
   
   /* Page transition classes */
@@ -108,11 +108,11 @@
   }
   
   .button-primary {
-    @apply px-6 py-3 bg-finance-blue text-white rounded-lg shadow-sm transition-all duration-200 hover:shadow-md hover:brightness-105;
+    @apply px-6 py-3 bg-finance-neon-blue text-white rounded-lg shadow-neon transition-all duration-200 hover:brightness-110;
   }
   
   .button-secondary {
-    @apply px-6 py-3 bg-white border border-gray-200 text-finance-text rounded-lg shadow-sm transition-all duration-200 hover:shadow-md hover:bg-gray-50;
+    @apply px-6 py-3 bg-finance-eclipse-card-light border border-white/5 text-white rounded-lg shadow-sm transition-all duration-200 hover:shadow-md hover:bg-finance-eclipse-card-light/80;
   }
   
   .chip {
@@ -120,6 +120,28 @@
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-finance-blue to-finance-light-blue;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-finance-neon-blue to-finance-neon-purple;
+  }
+
+  .neon-icon {
+    @apply filter drop-shadow-[0_0_5px_rgba(66,182,255,0.5)];
+  }
+
+  .neon-circle {
+    @apply relative rounded-full;
+  }
+
+  .neon-circle::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full rounded-full bg-neon-circle;
+    z-index: -1;
+  }
+
+  .neon-button {
+    @apply px-6 py-3 bg-transparent text-white border border-finance-neon-blue rounded-lg shadow-neon transition-all duration-200 hover:brightness-110;
+  }
+
+  .eclipse-card {
+    @apply bg-finance-eclipse-card rounded-xl p-6 border border-white/5 shadow-soft;
   }
 }
