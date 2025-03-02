@@ -6,6 +6,7 @@ import TransactionGraph from '../components/TransactionGraph';
 import SavingsCard from '../components/SavingsCard';
 import InvestmentRecommendations from '../components/InvestmentRecommendations';
 import MarketNews from '../components/MarketNews';
+import { Zap } from 'lucide-react';
 
 const Index: React.FC = () => {
   return (
