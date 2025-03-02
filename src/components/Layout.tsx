@@ -22,12 +22,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Zap className="text-white h-5 w-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-1 text-gradient">Eclipse Finance</h3>
+                <h3 className="font-semibold text-lg mb-1 text-gradient">Eclipse</h3>
                 <p className="text-sm text-muted-foreground">Your path to financial clarity</p>
               </div>
             </div>
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Eclipse Finance. All rights reserved.
+              © {new Date().getFullYear()} Eclipse. All rights reserved.
             </div>
           </div>
         </div>

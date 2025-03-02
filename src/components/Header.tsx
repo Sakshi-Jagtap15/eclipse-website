@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             <div className="w-10 h-10 rounded-lg bg-finance-neon-blue flex items-center justify-center mr-3 shadow-neon">
               <Zap className="text-white h-6 w-6 neon-icon" />
             </div>
-            <h1 className="text-xl font-semibold text-gradient">Eclipse Finance</h1>
+            <h1 className="text-xl font-semibold text-gradient">Eclipse</h1>
           </div>
 
           {/* Desktop Navigation */}
