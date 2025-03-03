@@ -65,28 +65,11 @@ const Hero: React.FC = () => {
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-finance-neon-blue opacity-10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -left-10 w-60 h-60 bg-finance-neon-purple opacity-10 rounded-full blur-3xl"></div>
             <div className="relative">
-              <div className="w-64 h-64 mx-auto mb-8 relative">
-                <div className="absolute inset-0 bg-neon-circle opacity-20 rounded-full animate-circle-rotation"></div>
-                <div className="absolute inset-4 bg-neon-circle opacity-30 rounded-full animate-circle-rotation" style={{ animationDirection: 'reverse' }}></div>
-                <div className="absolute inset-8 bg-finance-eclipse-card-light rounded-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white mb-2">₹ 0.0</div>
-                    <div className="text-sm text-muted-foreground">Total Expense</div>
-                    <button className="mt-4 text-sm text-finance-neon-blue">Click Calculate</button>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4 mt-6">
-                <button className="bg-finance-eclipse-card-light text-white py-3 rounded-lg hover:bg-opacity-80 transition-colors">
-                  Connect
-                </button>
-                <button className="bg-finance-eclipse-card-light text-white py-3 rounded-lg hover:bg-opacity-80 transition-colors">
-                  Monthly
-                </button>
-              </div>
-              <button className="w-full bg-finance-neon-blue text-white py-3 rounded-lg mt-4 hover:brightness-110 transition-colors shadow-neon">
-                Calculate
-              </button>
+              <img 
+                src="/lovable-uploads/f33ceed9-e873-4833-9051-e627e3d7e501.png" 
+                alt="Eclipse app on mobile devices" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
