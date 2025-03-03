@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronRight, BarChart2, PieChart, TrendingUp, Zap } from 'lucide-react';
 
@@ -70,8 +69,7 @@ const Hero: React.FC = () => {
                 alt="Eclipse app on mobile devices" 
                 className="w-full h-auto max-w-[120%] mx-auto rounded-lg shadow-none transform scale-110"
                 style={{
-                  filter: "drop-shadow(0 10px 8px rgb(0 0 0 / 0.2))",
-                  mixBlendMode: "luminosity"
+                  filter: "drop-shadow(0 10px 8px rgb(0 0 0 / 0.2))"
                 }}
               />
             </div>
