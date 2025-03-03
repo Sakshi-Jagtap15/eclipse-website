@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
               <img 
                 src="/lovable-uploads/f33ceed9-e873-4833-9051-e627e3d7e501.png" 
                 alt="Eclipse app on mobile devices" 
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto max-w-[120%] mx-auto rounded-lg shadow-lg transform scale-110"
               />
             </div>
           </div>
